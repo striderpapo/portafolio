@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    /*padding: 15px;*/
+}
+header{
+    background-color: #223143;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+header h1{
+    color: #F9B366;
+    font-size: 4vh;
+    padding: 0.5vh 2vh;
+    display: flex;
+    flex-direction: column;
+}
+ header  h1  p:nth-child(1){
+    flex: 1;
+    padding: 0vh 3vh;
+}
+ header  h1  p:nth-child(2){
+    flex: 1;
+    padding: 0vh 3vh;
+}
+.menu-nav{
+    flex: 1;
+}
+.menu-nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+}
+.menu-nav ul li{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+.menu-nav ul li a{
+    padding: 4vh 0vh;
+    color: #F9B366;
+    cursor: pointer;
+}
+#menu ul li:hover{
+    cursor: pointer;
+    }
+    #menu ul li:hover a{
+    color: white;
+        }
+body{
+    background-color: #223143;
+
+}
+footer{
+    background-color: #223143;
+}
+#slider{
+    max-width: 2000px;
+    width: 100%;
+    height: 80vh;
+    margin-top: 12vh;
+}
+#slider img{
+    width: 100%;
+    height:100%;
+}
+#cajas{
+    max-width: 2000px;
+    padding: 10px;
+}
+.caja{
+    display: block;
+    width: 400px;
+    height: 250px;
+    background-color: #223143;
+    border: 5px solid #F9B366;
+    margin-left: 30px;
+    margin-right: 0px;
+    padding: 20px;
+    padding-bottom: 34px;
+    float: left;
+    color: white;
+}
+#habilidades{
+    max-width: 2000px;
+    background-color: white;
+    border: 0px solid pink;
+    padding: 25px;
+}
+.bar{
+    display: block;
+    float: left;
+    width: 45%;
+    /*border: 1px solid #F9B366;*/
+    padding: 10px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+}
+.w3-container,.w3-panel {
+     padding:0px; 
+}
+.w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover {
+    color: #000!important;
+    background-color: #F9B366!important
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#myProgress {
+  width: 100%;
+  background-color: #223143;
+}
+
+.myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #F9B366;
+}
+#experiencias{
+    background-color: yellow;
+}
+#contacto{
+    background-color: white;
+}
+#contacto h2{
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    color:#223143
+}
+.demo-section{
+    background-color: white;
+    padding: 4vh 0vh;
+    text-align: center;
+}
+.demo-section a{
+    background-color: #223143;
+    text-align: center;
+    font-weight: bold;
+    color:#F9B366;
+    padding: 3vh 6vh;
+}
