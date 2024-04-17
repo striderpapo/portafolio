@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-viewportafolio',
@@ -6,12 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewportafolio.component.css']
 })
 export class ViewportafolioComponent implements OnInit {
+  isOpen: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
     this.moveProgressbar();
     console.log(window.addEventListener)
+    if (this.isMobile() ) {
+      this.isOpen = false;
+    }else{
+      this.isOpen = true;
+    }
   }
 
 moveProgressbar() {
@@ -126,6 +132,24 @@ public navigateToSection(section: string) {
     block: "center",
     inline: "nearest"
   });
+  this.isOpen = false;
   this.moveProgressbar();
+}
+toggleMenu() {
+  this.isOpen = !this.isOpen;
+}
+isMobile(): boolean {
+  return window.innerWidth <= 600; // Cambia el valor según tu definición de "móvil"
+}
+
+// Método para manejar el evento de redimensionamiento de la ventana
+@HostListener('window:resize', ['$event'])
+onResize(event:any) {
+  // Verificar si la pantalla es de tamaño móvil y cerrar el menú si está abierto
+  if (this.isMobile() ) {
+    this.isOpen = false;
+  }else{
+    this.isOpen = true;
+  }
 }
 }

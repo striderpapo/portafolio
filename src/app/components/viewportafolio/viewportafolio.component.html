@@ -10,14 +10,19 @@
 </head>
 <body>
     <header>
+        <div class="menu-toggle" (click)="toggleMenu()">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
         <h1><p>< / ></p><p>AGonzález</p></h1>
-        <nav class="menu-nav">
+        <nav class="menu-nav" *ngIf="isOpen">
             <ul>
-                <li><a (click)="navigateToSection('contacto')">Contacto</a></li>
-                <li><a (click)="navigateToSection('habilidades')">Habilidades</a></li>
-                <li><a (click)="navigateToSection('demo')">Demo</a></li>
-                <li><a (click)="navigateToSection('cajas')">Sobre mi</a></li>
-                <li><a (click)="navigateToSection('slider')">Inicio</a></li>
+                <li (click)="navigateToSection('contacto')"><a >Contacto</a></li>
+                <li (click)="navigateToSection('habilidades')"><a >Habilidades</a></li>
+                <li (click)="navigateToSection('demo')"><a >Demo</a></li>
+                <li (click)="navigateToSection('cajas')"><a >Sobre mi</a></li>
+                <li (click)="navigateToSection('slider')"><a >Inicio</a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>

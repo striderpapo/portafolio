@@ -22,6 +22,7 @@ header h1{
  header  h1  p:nth-child(1){
     flex: 1;
     padding: 0vh 3vh;
+    text-align: center;
 }
  header  h1  p:nth-child(2){
     flex: 1;
@@ -147,3 +148,148 @@ footer{
     color:#F9B366;
     padding: 3vh 6vh;
 }
+.menu-toggle {
+  display: none;
+	position: absolute;
+	top: 1.5vh;
+	left: 1.5vh;
+	width: 9vh;
+	height: 9vh;
+	border-radius: 99px;
+	background-color: #F9B366;
+	cursor: pointer;
+}
+.menu-toggle-close{
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #2e3047;
+    cursor: pointer;
+    /*margin-bottom: 1rem;*/
+    left: 14rem;
+	top: 0.7rem;
+}
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+}
+.hamburger-close{
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #2e3047;
+  transition-duration: .25s;
+}
+
+
+.hamburger-close > span,
+.hamburger-close > span::before,
+.hamburger-close > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger-close > span::before {
+    content: '';
+    top: -8px;
+  }
+  .hamburger-close > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu-toggle-close.is-active .hamburger-close > span {
+    transform: rotate(45deg);
+  }
+  .menu-toggle-close.is-active .hamburger-close > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .menu-toggle-close.is-active .hamburger-close > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    header{
+        flex-direction: column;
+    }
+    header h1{
+      text-align: center;
+  }
+    .menu-nav ul {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .menu-nav li {
+      margin-bottom: 5px;
+    }
+    .menu-nav ul li a{
+      padding: 5vh 0vh;
+      font-size: 3vh;
+  }
+  .bar{
+    width: 100%;
+    margin: 0vh;
+}
+#habilidades{
+   padding: 0vh;
+}
+.bar p{
+  text-align: center;
+}
+#cajas {
+  padding: 2vh;
+}
+.caja {
+  width: 100%;
+  height: 40vh;
+  padding: 1vh;
+  margin-left: 0px;
+  margin-bottom: 1vh;
+}
+  }
