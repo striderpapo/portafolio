@@ -137,6 +137,11 @@ public navigateToSection(section: string) {
 }
 toggleMenu() {
   this.isOpen = !this.isOpen;
+  if (this.isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 }
 isMobile(): boolean {
   return window.innerWidth <= 600; // Cambia el valor según tu definición de "móvil"
@@ -150,13 +155,6 @@ onResize(event:any) {
     this.isOpen = false;
   }else{
     this.isOpen = true;
-  }
-}
-// Método para manejar el evento de desplazamiento
-@HostListener('window:scroll', ['$event'])
-onScroll(event:any) {
-  if (this.isOpen) {
-    event.preventDefault(); // Evitar el comportamiento predeterminado del navegador al hacer scroll
   }
 }
 }
