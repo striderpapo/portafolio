@@ -250,6 +250,9 @@ footer{
     top: 0;
     transform: rotate(90deg);
   }
+  .menu.visible {
+    display: block; /* Muestra el menú cuando la clase 'visible' está presente */
+  }
 
 @media screen and (max-width: 600px) {
     .menu-toggle {
