@@ -14,7 +14,7 @@ header{
 }
 header h1{
     color: #F9B366;
-    font-size: 4vh;
+    font-size: 3.8vh;
     padding: 0.5vh 2vh;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ footer{
     max-width: 2000px;
     width: 100%;
     height: 80vh;
-    margin-top: 10vh;
+    margin-top: 13vh;
 }
 #slider img{
     width: 100%;
@@ -261,6 +261,9 @@ footer{
       text-align: center;
       font-size: 2.9vh;
   }
+  #slider{
+    margin-top: 9.5vh;
+}
     .menu-nav ul {
       display: flex;
       flex-direction: column-reverse;
