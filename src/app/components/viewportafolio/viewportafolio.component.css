@@ -53,6 +53,10 @@ header h1{
     #menu ul li:hover a{
     color: white;
         }
+body{
+    background-color: #223143;
+
+}
 footer{
     background-color: #223143;
 }
