@@ -137,11 +137,6 @@ public navigateToSection(section: string) {
 }
 toggleMenu() {
   this.isOpen = !this.isOpen;
-  if (this.isOpen) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = '';
-  }
 }
 isMobile(): boolean {
   return window.innerWidth <= 600; // Cambia el valor según tu definición de "móvil"
