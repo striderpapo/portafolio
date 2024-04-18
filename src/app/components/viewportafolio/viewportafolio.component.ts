@@ -13,11 +13,11 @@ export class ViewportafolioComponent implements OnInit {
   ngOnInit(): void {
     this.moveProgressbar();
     console.log(window.addEventListener)
-    if (this.isMobile() ) {
+    /*if (this.isMobile() ) {
       this.isOpen = false;
     }else{
       this.isOpen = true;
-    }
+    }*/
   }
 
 moveProgressbar() {
@@ -132,7 +132,7 @@ public navigateToSection(section: string) {
     block: "center",
     inline: "nearest"
   });
-  //this.isOpen = false;
+  this.isOpen = false;
   this.moveProgressbar();
 }
 toggleMenu() {
