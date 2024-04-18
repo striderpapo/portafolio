@@ -265,6 +265,9 @@ footer{
   #slider{
     margin-top: 9.5vh;
 }
+.menu-nav {
+  display: none;
+}
     .menu-nav ul {
       display: flex;
       flex-direction: column-reverse;
