@@ -132,7 +132,7 @@ public navigateToSection(section: string) {
     block: "center",
     inline: "nearest"
   });
-  this.isOpen = false;
+  //this.isOpen = false;
   this.moveProgressbar();
 }
 toggleMenu() {
