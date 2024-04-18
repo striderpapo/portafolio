@@ -4,6 +4,11 @@
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+section,footer{
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
 header{
     background-color: #223143;
     display: flex;
