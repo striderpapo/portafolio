@@ -152,4 +152,11 @@ onResize(event:any) {
     this.isOpen = true;
   }
 }
+// Método para manejar el evento de desplazamiento
+@HostListener('window:scroll', ['$event'])
+onScroll(event:any) {
+  if (this.isOpen) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del navegador al hacer scroll
+  }
+}
 }
