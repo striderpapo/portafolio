@@ -73,6 +73,7 @@ footer{
 #cajas{
     max-width: 2000px;
     padding: 10px;
+    background-color: #223143;
 }
 .caja{
     display: block;
