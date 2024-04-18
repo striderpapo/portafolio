@@ -250,7 +250,7 @@ footer{
     top: 0;
     transform: rotate(90deg);
   }
-  .menu.visible {
+  .menu-nav.visible {
     display: block; /* Muestra el menú cuando la clase 'visible' está presente */
   }
 
