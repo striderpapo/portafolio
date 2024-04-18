@@ -59,6 +59,11 @@ body{
 }
 footer{
     background-color: #223143;
+    text-align: center;
+}
+footer p{
+  color: #F4F4F4;
+  padding: 2vh 0vh;
 }
 #slider{
     max-width: 2000px;
