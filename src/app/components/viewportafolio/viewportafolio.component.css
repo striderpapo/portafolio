@@ -250,9 +250,6 @@ footer{
     top: 0;
     transform: rotate(90deg);
   }
-  .menu-nav.visible {
-    display: block; /* Muestra el menú cuando la clase 'visible' está presente */
-  }
 
 @media screen and (max-width: 600px) {
     .menu-toggle {
@@ -267,9 +264,6 @@ footer{
   }
   #slider{
     margin-top: 9.5vh;
-}
-.menu-nav {
-  display: none;
 }
     .menu-nav ul {
       display: flex;
