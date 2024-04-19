@@ -127,12 +127,25 @@ ofset(){
 public navigateToSection(section: string) {
   //window.location.hash = '';
   //window.location.hash = section;
+  console.log(document.getElementsByClassName("caja")![0])
+  if(section=="caja"){
+    document.getElementsByClassName("caja")![0].scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest"
+    });
+  }else{
   document.getElementById(section)!.scrollIntoView({
     behavior: "smooth",
     block: "center",
     inline: "nearest"
   });
-  this.isOpen = false;
+}
+  if (this.isMobile() ) {
+    this.isOpen = false;
+  }else{
+    this.isOpen = true;
+  }
   this.moveProgressbar();
 }
 toggleMenu() {
