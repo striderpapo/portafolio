@@ -16,7 +16,7 @@
 			</div>
 		</div>
         <h1><p>< / ></p><p>AGonzález</p></h1>
-        <nav class="menu-nav" *ngIf="isOpen">
+        <nav class="menu-nav" [ngClass]="{'open': isOpen}">
             <ul>
                 <li (click)="navigateToSection('contacto')"><a >Contacto</a></li>
                 <li (click)="navigateToSection('habilidades')"><a >Habilidades</a></li>
