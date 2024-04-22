@@ -270,12 +270,6 @@ footer p{
   #slider{
     margin-top: 9.5vh;
 }
-.menu-nav{
-  display: none;
-}
-.menu-nav.open {
-  display: block; /* Muestra el menú cuando isMenuVisible es true */
-}
     .menu-nav ul {
       display: flex;
       flex-direction: column-reverse;
@@ -284,7 +278,7 @@ footer p{
       margin-bottom: 5px;
     }
     .menu-nav ul li a{
-      padding: 6vh 0vh;
+      padding: 4vh 0vh;
       font-size: 3vh;
   }
   .bar{
