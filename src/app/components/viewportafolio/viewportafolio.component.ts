@@ -13,11 +13,11 @@ export class ViewportafolioComponent implements OnInit {
   ngOnInit(): void {
     this.moveProgressbar();
     console.log(window.addEventListener)
-    if (this.isMobile() ) {
+    /*if (this.isMobile() ) {
       this.isOpen = false;
     }else{
       this.isOpen = true;
-    }
+    }*/
   }
 
 moveProgressbar() {
@@ -114,16 +114,7 @@ moveProgressbar() {
 
     }
 }
-ofset(){
-  const d = document.getElementById("div1")!;
-  const topPos = d.offsetTop;
-  console.log(topPos)
-  if (topPos > 10) {
-    // object offset is more
-    // than 10 pixels from its parent
-   // alert("que haces")
-  }
-}
+
 public navigateToSection(section: string) {
   //window.location.hash = '';
   //window.location.hash = section;
