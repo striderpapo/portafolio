@@ -5,7 +5,6 @@ import { ViewportafolioComponent } from './components/viewportafolio/viewportafo
 
 const appRoutes:Routes=[
 	{path:'',component:ViewportafolioComponent},
-	{path:'portafolio',component:ViewportafolioComponent},
 	{ path: '**', component: ViewportafolioComponent }
 ];
 
