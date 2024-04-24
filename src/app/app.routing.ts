@@ -4,6 +4,7 @@ import { Routes,RouterModule} from '@angular/router';
 import { ViewportafolioComponent } from './components/viewportafolio/viewportafolio.component';
 
 const appRoutes:Routes=[
+	{path:'',component:ViewportafolioComponent},
 	{path:'portafolio',component:ViewportafolioComponent},
 ];
 
