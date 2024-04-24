@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "https://main--portafolioarturogg.netlify.app/portafolio"
+  to = "/index.html/portafolio"
   status = 200
