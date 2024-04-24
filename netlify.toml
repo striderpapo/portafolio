@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/"
-  to = "/portafolio"
+  to = "/index.html/portafolio"
   status = 200
