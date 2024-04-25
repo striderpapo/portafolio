@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/portafolio/:splat"
-  status = 200
