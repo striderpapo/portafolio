@@ -269,6 +269,7 @@ footer p{
   }
   #slider{
     margin-top: 9.5vh;
+    height: 63vh;
 }
     .menu-nav ul {
       display: flex;
