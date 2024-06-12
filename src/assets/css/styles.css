@@ -10,37 +10,3 @@ body{
     background-color: #F4F4F4;
     /*height: 650px;*/
 }
-#slider{
-    background-image: url(https://main--portafolioarturogg.netlify.app/portafolio/assets/img/progra.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 2000px;
-    width: 100%;
-    height: 80vh;
-    margin-top: 12vh;
-    padding: 14vh 9vh;
-    display: flex;
-  }
-  #slider span{
-    width: 60%;
-  }
-  #slider span p{
-    color:#F9B366;
-    font-size: 10vh;
-    padding: 1vh;
-  }
-  #text {
-    font-size: 24px;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: blink-caret 0.75s step-end infinite;
-  }
-  
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-  }
