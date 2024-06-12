@@ -7,6 +7,12 @@ import { Component, OnInit ,HostListener } from '@angular/core';
 })
 export class ViewportafolioComponent implements OnInit {
   isOpen: boolean = true;
+  texts: string[] = ["Primero este texto", "Luego este otro texto", "Finalmente este texto"];
+  currentText: string = '';
+  index: number = 0;
+  typingSpeed: number = 100; // Velocidad de tipeo en milisegundos
+  erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
+  delayBetweenTexts: number = 2000; // Retraso entre textos en milisegundos
 
   constructor() { }
 
@@ -18,6 +24,7 @@ export class ViewportafolioComponent implements OnInit {
     }else{
       this.isOpen = true;
     }
+    this.typeText();
   }
 
 moveProgressbar() {
@@ -155,5 +162,31 @@ onResize(event:any) {
   }else{
     this.isOpen = true;
   }
+}
+
+typeText(): void {
+  const fullText = this.texts[this.index];
+  let charIndex = 0;
+  const typeInterval = setInterval(() => {
+    if (charIndex < fullText.length) {
+      this.currentText += fullText.charAt(charIndex);
+      charIndex++;
+    } else {
+      clearInterval(typeInterval);
+      setTimeout(() => this.eraseText(), this.delayBetweenTexts);
+    }
+  }, this.typingSpeed);
+}
+
+eraseText(): void {
+  const eraseInterval = setInterval(() => {
+    if (this.currentText.length > 0) {
+      this.currentText = this.currentText.substring(0, this.currentText.length - 1);
+    } else {
+      clearInterval(eraseInterval);
+      this.index = (this.index + 1) % this.texts.length;
+      setTimeout(() => this.typeText(), this.delayBetweenTexts / 2);
+    }
+  }, this.erasingSpeed);
 }
 }
