@@ -74,9 +74,8 @@ footer p{
   width: 100%;
   height: 80vh;
   margin-top: 12vh;
-  position: relative;
-  /*padding: 14vh 9vh;
-  display: flex;*/
+  padding: 14vh 9vh;
+  display: flex;
 }
 #slider span{
   width: 60%;
@@ -87,9 +86,6 @@ footer p{
   padding: 1vh;
 }
 #text {
-  position: absolute;
-  top: 13%;
-  left: 7%;
   font-size: 24px;
   font-weight: bold;
   white-space: nowrap;
