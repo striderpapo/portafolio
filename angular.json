@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "https://main--portafolioarturogg.netlify.app/portafolio/assets/css/styles.css"
+              "/portafolio/assets/css/styles.css"
             ],
             "scripts": []
           },
