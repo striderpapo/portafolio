@@ -94,12 +94,6 @@ footer p{
   animation: blink-caret 0.75s step-end infinite;
 }
 
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
-}
-
 #cajas{
     max-width: 2000px;
     padding: 10px;
