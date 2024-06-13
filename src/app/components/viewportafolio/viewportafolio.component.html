@@ -19,6 +19,10 @@
 </header>
     <div id="slider">
         <span id="text"><p>{{ currentText }}</p></span>
+        <img *ngFor="let image of images; let i = index"
+       [src]="image"
+       [ngClass]="{ 'scrolling-image': true, 'active': i === currentImageIndex }"
+       alt="Imagen con desplazamiento vertical" />
     </div>
     <section id="cajas">
     <div class="caja">

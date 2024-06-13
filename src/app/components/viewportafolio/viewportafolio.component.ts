@@ -13,6 +13,11 @@ export class ViewportafolioComponent implements OnInit {
   typingSpeed: number = 100; // Velocidad de tipeo en milisegundos
   erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
   delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
+  images: string[] = [
+    'assets/prograrecortado.jpg',
+    'assets/reactrecortado.jpg'
+  ];
+  currentImageIndex: number = 0;
 
   constructor() { }
 
