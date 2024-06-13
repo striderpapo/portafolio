@@ -45,6 +45,7 @@ header h1{
 .menu-nav ul li a{
     padding: 4vh 0vh;
     color: #F9B366;
+    font-weight: bold;
     cursor: pointer;
 }
 #menu ul li:hover{
@@ -329,5 +330,19 @@ footer p{
   padding: 1vh;
   margin-left: 0px;
   margin-bottom: 1vh;
+}
+#slider{
+  padding: 17vh 1.5vh;
+}
+#slider span {
+  width: 75%;
+}
+#text {
+  white-space: normal;
+  word-wrap: break-word;
+}
+#slider span p {
+  font-size: 5.6vh;
+  padding: 1vh;
 }
   }

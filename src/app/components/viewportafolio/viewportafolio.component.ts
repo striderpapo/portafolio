@@ -12,7 +12,7 @@ export class ViewportafolioComponent implements OnInit {
   index: number = 0;
   typingSpeed: number = 100; // Velocidad de tipeo en milisegundos
   erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
-  delayBetweenTexts: number = 2000; // Retraso entre textos en milisegundos
+  delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
 
   constructor() { }
 
