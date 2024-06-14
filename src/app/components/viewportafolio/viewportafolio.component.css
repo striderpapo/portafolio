@@ -67,24 +67,36 @@ footer p{
   padding: 2vh 0vh;
 }
 #slider{
-  background-image: url(https://main--portafolioarturogg.netlify.app/portafolio/assets/img/progra.jpg);
+  /*background-image: url(https://main--portafolioarturogg.netlify.app/portafolio/assets/img/progra.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: #223143;
   max-width: 2000px;
   width: 100%;
   height: 80vh;
   margin-top: 12vh;
-  padding: 14vh 9vh;
+  /*padding: 14vh 9vh;*/
   display: flex;
 }
+#slider .left{
+  flex:1.3;
+  padding: 14vh 9vh;
+}
+#slider .right{
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
 #slider span{
-  width: 60%;
+  width: 100%;
 }
 #slider span p{
-  color:#F9B366;
-  font-size: 10vh;
-  padding: 1vh;
+    color: #F9B366;
+    font-size: 9vh;
+    padding: 1vh;
+    white-space: normal;
+    word-wrap: break-word;
 }
 #text {
   font-size: 24px;
@@ -100,11 +112,11 @@ footer p{
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-#slider img{
+/*#slider img{
   display: block;
     width: 100%;
     height:100%;
-}
+}*/
 #cajas{
     max-width: 2000px;
     padding: 10px;
@@ -284,6 +296,49 @@ footer p{
     transform: rotate(90deg);
   }
 
+  /* vertical-scroll-image-switch.component.css */
+.image-container {
+  width: 100%;
+  height: 300px; /* Altura del contenedor visible */
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes verticalScroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes horizontalScroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.scrolling-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s, transform 1s;
+  /*object-fit: cover;*/
+}
+
+.scrolling-image.active {
+  opacity: 1;
+  animation: verticalScroll 1s forwards;
+}
+
 
 @media screen and (max-width: 600px) {
     .menu-toggle {
@@ -299,6 +354,34 @@ footer p{
   #slider{
     margin-top: 9.5vh;
     height: 64vh;
+    flex-direction: column;
+}
+#slider .left {
+  flex: 0;
+  padding: 3vh 1vh;
+}
+#slider span {
+  width: 100%;
+}
+#slider span p {
+  font-size: 3.6vh;
+  padding: 0vh;
+  text-align: center;
+
+}
+#slider .right {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-image {
+  height: 53vh;
+  transform: translateX(100%);
+}
+
+.scrolling-image.active {
+  animation: horizontalScroll 1s forwards;
 }
     .menu-nav ul {
       display: flex;
@@ -332,17 +415,12 @@ footer p{
   margin-bottom: 1vh;
 }
 #slider{
-  padding: 17vh 1.5vh;
+ /* padding: 17vh 1.5vh;*/
 }
-#slider span {
-  width: 75%;
-}
+
 #text {
   white-space: normal;
   word-wrap: break-word;
 }
-#slider span p {
-  font-size: 5.6vh;
-  padding: 1vh;
-}
+
   }

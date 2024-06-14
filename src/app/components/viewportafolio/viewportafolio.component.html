@@ -18,11 +18,18 @@
         </nav>
 </header>
     <div id="slider">
-        <span id="text"><p>{{ currentText }}</p></span>
+        <div class="left">
+            <span id="text"><p>{{ currentText }}</p></span>
+        </div>
+        <div class="right"><img *ngFor="let image of images; let i = index"
+            [src]="image"
+            [ngClass]="{ 'scrolling-image': true, 'active': i === currentImageIndex }"
+            alt="Imagen con desplazamiento vertical" /></div>
+        <!--<span id="text"><p>{{ currentText }}</p></span>
         <img *ngFor="let image of images; let i = index"
        [src]="image"
        [ngClass]="{ 'scrolling-image': true, 'active': i === currentImageIndex }"
-       alt="Imagen con desplazamiento vertical" />
+       alt="Imagen con desplazamiento vertical" />-->
     </div>
     <section id="cajas">
     <div class="caja">

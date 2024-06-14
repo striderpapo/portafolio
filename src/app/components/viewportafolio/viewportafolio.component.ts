@@ -14,8 +14,8 @@ export class ViewportafolioComponent implements OnInit {
   erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
   delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
   images: string[] = [
-    'assets/prograrecortado.jpg',
-    'assets/reactrecortado.jpg'
+    'assets/img/prograrecortado.jpg',
+    'assets/img/reactrecortado.png'
   ];
   currentImageIndex: number = 0;
 
@@ -30,6 +30,7 @@ export class ViewportafolioComponent implements OnInit {
       this.isOpen = true;
     }
     this.typeText();
+    this.startImageSwitch();
   }
 
 moveProgressbar() {
@@ -193,5 +194,10 @@ eraseText(): void {
       setTimeout(() => this.typeText(), this.delayBetweenTexts / 2);
     }
   }, this.erasingSpeed);
+}
+startImageSwitch(): void {
+  setInterval(() => {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }, 4000); // Cambia de imagen cada 3 segundos
 }
 }
