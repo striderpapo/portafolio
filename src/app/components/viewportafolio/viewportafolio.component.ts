@@ -16,6 +16,9 @@ export class ViewportafolioComponent implements OnInit {
   images: string[] = [
     'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/prograrecortado.jpg',
     'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/reactrecortado.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/nodeprod.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/angularprod.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/rnprod.png',
   ];
   currentImageIndex: number = 0;
 
