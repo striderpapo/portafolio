@@ -345,7 +345,7 @@ footer p{
     flex-direction: column;
 }
 #slider .left {
-  flex: 0;
+  flex: 1;
   padding: 3vh 1vh;
 }
 #slider span {
@@ -358,7 +358,7 @@ footer p{
 
 }
 #slider .right {
-  flex: 1;
+  flex: 8;
   overflow: hidden;
   position: relative;
 }
