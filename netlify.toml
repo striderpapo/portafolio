@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "/"
-  to = "/portafolio"
-  status = 301
-  force = true
+  from = "/portafolio/*"
+  to = "/portafolio/index.html"
+  status = 200
