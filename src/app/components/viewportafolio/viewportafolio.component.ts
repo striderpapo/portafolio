@@ -1,9 +1,10 @@
 import { Component, OnInit ,HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-viewportafolio',
-  templateUrl: './viewportafolio.component.html',
-  styleUrls: ['./viewportafolio.component.css']
+    selector: 'app-viewportafolio',
+    templateUrl: './viewportafolio.component.html',
+    styleUrls: ['./viewportafolio.component.css'],
+    standalone: false
 })
 export class ViewportafolioComponent implements OnInit {
   isOpen: boolean = true;
@@ -21,8 +22,13 @@ export class ViewportafolioComponent implements OnInit {
     'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/rnprod.png',
   ];
   currentImageIndex: number = 0;
-
-  constructor() { }
+  public spanproyectos:number;
+  public tituloTecnologia: string = '';
+  public imageseleccionada:string='';
+  constructor() {
+    this.spanproyectos=0;
+    this.tituloTecnologia = '';
+   }
 
   ngOnInit(): void {
     this.moveProgressbar();
@@ -124,6 +130,22 @@ moveProgressbar() {
       }
     }
     break;
+    case '5':
+    var widthMysql = 1;
+    var idMysql = setInterval(frameReact, 10);
+    function frameReact() {
+      if (widthMysql >= 80) {
+        clearInterval(idMysql);
+        //i = 0;
+      } else {
+        //console.log(elem[index], 'color: red')
+        //console.log('%c'+widthRn, 'color: blue')
+        widthMysql++;
+        //console.log('%c'+widthRn, 'color: pink')
+        elem[index].style.width = widthMysql + "%";
+      }
+    }
+    break;
   default:
     // code block
 }
@@ -202,5 +224,53 @@ startImageSwitch(): void {
   setInterval(() => {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
   }, 4000); // Cambia de imagen cada 3 segundos
+}
+
+chaneproyectoimagenes(tipoproyecto:number){
+
+  switch(tipoproyecto) {
+    case 1:
+      this.tituloTecnologia = 'Angular';
+      if(this.spanproyectos==1){
+        this.spanproyectos=0
+        return
+      }
+      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/angularprod.png';
+      this.spanproyectos=1
+      break;
+    case 2:
+      this.tituloTecnologia = 'Node';
+      if(this.spanproyectos==2){
+        this.spanproyectos=0
+        return
+      }
+      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/nodeprod.png',
+      this.spanproyectos=2     
+      break;
+    case 3:
+      this.tituloTecnologia = 'React Native';
+      if(this.spanproyectos==3){
+        this.spanproyectos=0
+        return
+      }
+    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/rnprod.png',
+      this.spanproyectos=3
+      break;
+    case 4:
+      this.tituloTecnologia = 'React + electronvite';
+      if(this.spanproyectos==4){
+        this.spanproyectos=0
+        return
+      }
+      
+    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/reactrecortado.png',
+      this.spanproyectos=4
+      break;
+    default:
+      // code block
+  }
+  setTimeout(() => {
+    this.navigateToSection('imagenesProyecto');
+  }, 100);
 }
 }

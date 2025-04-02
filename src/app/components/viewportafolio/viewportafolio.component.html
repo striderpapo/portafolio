@@ -33,16 +33,66 @@
     </div>
     <section id="cajas">
     <div class="caja">
-        <p>Angular</p>
+        <h3>Angular</h3>
+        <p>Trabaje en una aplicacion web con modulos de control de inventario para medicinas como para articulos para las mascotas 
+        ,agenda de citas.</p>
+        <button class="button-caja" (click)="chaneproyectoimagenes(1)">Ver</button>
     </div>
-
+    <section *ngIf="spanproyectos==1 && isOpen==false" id="imagenesProyecto">
+        <h1>{{this.tituloTecnologia}}</h1>
+        <img 
+            [src]="imageseleccionada"
+            alt="Imagen con desplazamiento vertical"
+            style="width: 25%; height: 50vh;" />
+    </section>
     <div class="caja">
-        <p>node</p>
+        <h3>Node</h3>
+        <p>Junto con express realice la APi que facilitan el manejo de información al momento de mostrar, insertar, actualizar y 
+            borrar en la app para veterinarias.</p>
+            <button class="button-caja" (click)="chaneproyectoimagenes(2)">Ver</button>
         </div>
+        <section *ngIf="spanproyectos==2 && isOpen==false" id="imagenesProyecto">
+            <h1>{{this.tituloTecnologia}}</h1>
+            <img 
+                [src]="imageseleccionada"
+                alt="Imagen con desplazamiento vertical"
+                style="width: 25%; height: 50vh;" />
+        </section>
         <div class="caja">
-            <p>React Native</p>
+            <h3>React Native</h3>
+            <p>Desarrollo de aplicacion movil que conecta usuarios con veterinarias cercanas a su unicacion,control 
+                de informacion de su mascota ,como seguimiento de citas.</p>
+                <button class="button-caja" (click)="chaneproyectoimagenes(3)">Ver</button>
         </div>
+        <section *ngIf="spanproyectos==3 && isOpen==false" id="imagenesProyecto">
+            <h1>{{this.tituloTecnologia}}</h1>
+            <img 
+                [src]="imageseleccionada"
+                alt="Imagen con desplazamiento vertical"
+                style="width: 25%; height: 50vh;" />
+        </section>
+        <div class="caja">
+            <h3>React + electronvite</h3>
+            <p>Apartir de una aplicacion desarrollada para windows xp me pidieron hacerla una version mas actual evitando asi que trabajen
+            desde una maquina virtual con xp,aplicacion con control de piezas,clientes,proveedores,facturas,grafico y piezas mas vendidas por mes y año,
+            gracias a electron vite+sqlite se empaqueto en un ejecutable que se puede correr en las computaduras donde se monta la carpeta,gracias a one drive la BD en sqlite siempre esta actualizada</p>
+            <button class="button-caja" (click)="chaneproyectoimagenes(4)">Ver</button>
+        </div>
+        <section *ngIf="spanproyectos==4 && isOpen==false" id="imagenesProyecto">
+            <h1>{{this.tituloTecnologia}}</h1>
+            <img 
+                [src]="imageseleccionada"
+                alt="Imagen con desplazamiento vertical"
+                style="width: 25%; height: 50vh;" />
+        </section>
         <div class="clearfix"></div>
+        <section *ngIf="spanproyectos!==0 && isOpen==true" id="imagenesProyecto">
+            <h1>{{this.tituloTecnologia}}</h1>
+            <img 
+                [src]="imageseleccionada"
+                alt="Imagen con desplazamiento vertical"
+                style="width: 25%; height: 50vh;" />
+        </section>
     </section>
     <section id="habilidades">
         <div id="scrollHabilidades">
@@ -73,6 +123,12 @@
             </div>
             <div class="bar">
                 <p>MYSQL</p>
+                <div id="myProgress">
+                <div class="myBar"></div>
+                </div>
+            </div>
+            <div class="bar">
+                <p>React</p>
                 <div id="myProgress">
                 <div class="myBar"></div>
                 </div>
