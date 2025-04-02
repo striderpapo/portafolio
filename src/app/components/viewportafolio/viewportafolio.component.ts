@@ -156,6 +156,15 @@ moveProgressbar() {
 public navigateToSection(section: string) {
   //window.location.hash = '';
   //window.location.hash = section;
+  /*
+  //lo de netlify.toml
+  [[redirects]]
+  from = "/"
+  to = "/portafolio"
+  status = 301
+  force = true
+  
+  */
   console.log(document.getElementsByClassName("caja")![0])
   if(section=="caja"){
     document.getElementsByClassName("caja")![0].scrollIntoView({
