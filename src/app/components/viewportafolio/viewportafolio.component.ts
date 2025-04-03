@@ -60,6 +60,10 @@ moveProgressbar() {
       } else {
        // console.log(elem[index], 'color: red')
        // console.log('%c'+widthAn, 'color: blue')
+       /*[[redirects]]
+  from = "/portafolio/*"
+  to = "/portafolio/browser/index.html"
+  status = 200*/
         widthAn++;
        // console.log('%c'+widthAn, 'color: pink')
         elem[index].style.width = widthAn + "%";
