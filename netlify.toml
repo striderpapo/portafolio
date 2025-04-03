@@ -1,8 +1,5 @@
-[build]
-  command = "ng build --configuration production"
-  publish = "dist/portafolio/browser"
-
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/portafolio/*"
+  to = "/portafolio/browser/index.html"
   status = 200
+force = true
