@@ -15,11 +15,11 @@ export class ViewportafolioComponent implements OnInit {
   erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
   delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
   images: string[] = [
-    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/prograrecortado.jpg',
-    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/reactrecortado.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/nodeprod.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/angularprod.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/assets/img/rnprod.png',
+    'https://main--portafolioarturogg.netlify.app/browser/assets/img/prograrecortado.jpg',
+    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/reactrecortado.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/nodeprod.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/angularprod.png',
+    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/rnprod.png',
   ];
   currentImageIndex: number = 0;
   public spanproyectos:number;
