@@ -15,11 +15,11 @@ export class ViewportafolioComponent implements OnInit {
   erasingSpeed: number = 50; // Velocidad de borrado en milisegundos
   delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
   images: string[] = [
-    'https://main--portafolioarturogg.netlify.app/browser/assets/img/prograrecortado.jpg',
-    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/reactrecortado.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/nodeprod.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/angularprod.png',
-    'https://main--portafolioarturogg.netlify.app/portafolio/browser/assets/img/rnprod.png',
+    'https://main--portafolioarturogg.netlify.app/assets/img/prograrecortado.jpg',
+    'https://main--portafolioarturogg.netlify.app/assets/img/reactrecortado.png',
+    'https://main--portafolioarturogg.netlify.app/assets/img/nodeprod.png',
+    'https://main--portafolioarturogg.netlify.app/assets/img/angularprod.png',
+    'https://main--portafolioarturogg.netlify.app/assets/img/rnprod.png',
   ];
   currentImageIndex: number = 0;
   public spanproyectos:number;
@@ -239,7 +239,7 @@ chaneproyectoimagenes(tipoproyecto:number){
         this.spanproyectos=0
         return
       }
-      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/angularprod.png';
+      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/assets/img/angularprod.png';
       this.spanproyectos=1
       break;
     case 2:
@@ -248,7 +248,7 @@ chaneproyectoimagenes(tipoproyecto:number){
         this.spanproyectos=0
         return
       }
-      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/nodeprod.png',
+      this.imageseleccionada='https://main--portafolioarturogg.netlify.app/assets/img/nodeprod.png',
       this.spanproyectos=2     
       break;
     case 3:
@@ -257,7 +257,7 @@ chaneproyectoimagenes(tipoproyecto:number){
         this.spanproyectos=0
         return
       }
-    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/rnprod.png',
+    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/assets/img/rnprod.png',
       this.spanproyectos=3
       break;
     case 4:
@@ -267,7 +267,7 @@ chaneproyectoimagenes(tipoproyecto:number){
         return
       }
       
-    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/portafolio/assets/img/reactrecortado.png',
+    this.imageseleccionada='https://main--portafolioarturogg.netlify.app/assets/img/reactrecortado.png',
       this.spanproyectos=4
       break;
     default:
