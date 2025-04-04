@@ -383,9 +383,9 @@ color: #223143;
   transform: translateX(100%);
 }
 
-.scrolling-image.active {
+/*.scrolling-image.active {
   animation: horizontalScroll 1s forwards;
-}
+}*/
     .menu-nav ul {
       display: flex;
       flex-direction: column-reverse;
