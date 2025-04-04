@@ -39,7 +39,7 @@ export class ViewportafolioComponent implements OnInit {
       this.isOpen = true;
     }
     this.typeText();
-    this.startImageSwitch();
+    //this.startImageSwitch();
   }
 
 moveProgressbar() {
