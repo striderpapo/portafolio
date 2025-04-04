@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/portafolio/*"
-  to = "/portafolio/browser/index.html"
+  to = "/portafolio/index.html"
   status = 200
-force = true
+  force = true
