@@ -8,7 +8,7 @@ import { Component, OnInit ,HostListener } from '@angular/core';
 })
 export class ViewportafolioComponent implements OnInit {
   isOpen: boolean = true;
-  texts: string[] = ["Primero este texto", "Luego este otro texto", "Finalmente este texto"];
+  texts: string[] = ["Primero este texto", "Luego este otro texto", "Finalmente este texto", "cuarto texto"];
   currentText: string = '';
   index: number = 0;
   typingSpeed: number = 100; // Velocidad de tipeo en milisegundos
