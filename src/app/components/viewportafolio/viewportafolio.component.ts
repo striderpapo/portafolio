@@ -16,7 +16,8 @@ export class ViewportafolioComponent implements OnInit {
   delayBetweenTexts: number = 500; // Retraso entre textos en milisegundos
   images: string[] = [
     //'https://main--portafolioarturogg.netlify.app/assets/img/prograrecortado.jpg',
-    'https://main--portafolioarturogg.netlify.app/assets/img/reactrecortado.png',
+    //'https://main--portafolioarturogg.netlify.app/assets/img/reactrecortado.png',
+    'https://main--portafolioarturogg.netlify.app/assets/img/reactprod.png',
     'https://main--portafolioarturogg.netlify.app/assets/img/nodeprod.png',
     'https://main--portafolioarturogg.netlify.app/assets/img/angularprod.png',
     'https://main--portafolioarturogg.netlify.app/assets/img/rnprod.png',
